@@ -102,40 +102,6 @@ Response
 
 ---
 
-## 📂 Project Structure
-
-
-Ai-Engineer Foundation/
-│
-├── mcp_server/
-│ ├── tools/
-│ │ ├── order_tool.py
-│ │ └── ticket_tool.py
-│ └── database/orders.json
-│
-├── llm_integration/
-│ └── agent.py
-│
-├── rag/
-│ ├── retriever.py
-│ └── faq.txt
-│
-├── demo/
-│ ├── run_agent.py
-│ ├── app.py
-│ └── test_tools.py
-│
-├── bussiness_usecase/
-│ ├── problem_statement.md
-│ └── kpi.md
-│
-├── .env.example
-├── requirements.txt
-└── README.md
-
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
@@ -152,9 +118,11 @@ Create .env file:
 GROQ_API_KEY=your_api_key_here
 ▶️ Run Application
 🔹 CLI Demo
+
 python -m demo.run_agent
 🔹 Web UI (Streamlit)
 streamlit run demo/app.py
+
 🎥 Demo Examples
 Order Status
 User: Where is my order 101?
@@ -168,6 +136,7 @@ AI: Ticket created successfully
 Knowledge Question (RAG)
 User: What is refund policy?
 AI: Refund is processed within 5-7 days
+
 📊 Business Impact
 
 ⚡ Faster response time (< 2 seconds)
@@ -177,6 +146,8 @@ AI: Refund is processed within 5-7 days
 🤖 Automated repetitive tasks (~75%)
 
 📈 Improved customer satisfaction
+
+
 
 🔮 Future Enhancements
 
@@ -190,6 +161,8 @@ Authentication & security
 
 Production deployment
 
+
+
 🎯 Key Learnings
 
 MCP Architecture
@@ -199,6 +172,8 @@ LLM Tool Calling
 RAG Systems
 
 AI Agent Design
+
+
 
 📌 Conclusion
 
