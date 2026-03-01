@@ -1,6 +1,6 @@
-#  AI Customer Support MCP Agent
+# 🤖 AI Customer Support MCP Agent
 
-##  Overview
+## 🚀 Overview
 This project demonstrates a **production-style AI Agent system** using:
 
 - **LLM (Groq)**
@@ -13,18 +13,18 @@ The agent understands user queries, selects the correct tool, and executes backe
 
 ---
 
-##  Problem Statement
+## ❗ Problem Statement
 
 Traditional customer support systems face:
 
--  High operational costs
--  Slow response times
--  Repetitive manual work
--  Poor scalability
+- ❌ High operational costs
+- ❌ Slow response times
+- ❌ Repetitive manual work
+- ❌ Poor scalability
 
 ---
 
-##  Solution
+## 💡 Solution
 
 An **AI-powered Customer Support Agent** that:
 
@@ -35,7 +35,7 @@ An **AI-powered Customer Support Agent** that:
 
 ---
 
-##  Core Concepts
+## 🧠 Core Concepts
 
 ### 🔹 MCP (Model Context Protocol)
 Acts as a **bridge between LLM and tools**
@@ -85,6 +85,8 @@ Example:
 ---
 
 ## 🏗 Architecture
+
+
 User (UI / CLI)
 ↓
 LLM (Groq)
@@ -100,21 +102,49 @@ Response
 
 ---
 
+## 📂 Project Structure
+
+
+Ai-Engineer Foundation/
+│
+├── mcp_server/
+│ ├── tools/
+│ │ ├── order_tool.py
+│ │ └── ticket_tool.py
+│ └── database/orders.json
+│
+├── llm_integration/
+│ └── agent.py
+│
+├── rag/
+│ ├── retriever.py
+│ └── faq.txt
+│
+├── demo/
+│ ├── run_agent.py
+│ ├── app.py
+│ └── test_tools.py
+│
+├── bussiness_usecase/
+│ ├── problem_statement.md
+│ └── kpi.md
+│
+├── .env.example
+├── requirements.txt
+└── README.md
+
+
 ---
 
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
 
-```bash
 git clone https://github.com/Haakeye/Ai-customer-support-mcp.git
 cd Ai-customer-support-mcp
 
-### 2. Install Dependencies
-
+2. Install Dependencies
 pip install -r requirements.txt
-
-
 3. Add API Key
 
 Create .env file:
